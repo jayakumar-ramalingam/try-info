@@ -396,6 +396,10 @@ h3 {
   gap: 18px;
 }
 
+.section-list-spaced {
+  margin-top: 18px;
+}
+
 .section-list article {
   min-height: 0;
 }
