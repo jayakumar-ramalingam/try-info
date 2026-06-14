@@ -456,6 +456,15 @@ h3 {
   gap: 18px;
 }
 
+.certificate-group + .certificate-group {
+  margin-top: 36px;
+}
+
+.certificate-group > h3 {
+  margin-bottom: 14px;
+  font-size: 1.15rem;
+}
+
 .certificate-gallery article {
   overflow: hidden;
   border: 1px solid var(--line);
