@@ -509,6 +509,40 @@ h3 {
   line-height: 1.55;
 }
 
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.photo-gallery figure {
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.82);
+}
+
+.photo-gallery a {
+  display: block;
+  background: #ede8de;
+}
+
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center;
+}
+
+.photo-gallery figcaption {
+  padding: 14px 16px;
+  color: var(--muted);
+  font-weight: 800;
+  line-height: 1.4;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
@@ -581,7 +615,8 @@ h3 {
   .details,
   .stats,
   .cert-grid,
-  .certificate-gallery {
+  .certificate-gallery,
+  .photo-gallery {
     grid-template-columns: 1fr;
   }
 
