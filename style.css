@@ -373,6 +373,13 @@ h3 {
   font-weight: 900;
 }
 
+.text-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--accent-dark);
+  font-weight: 900;
+}
+
 .credentials {
   display: grid;
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
@@ -401,6 +408,46 @@ h3 {
 
 .section-list article > a {
   margin-top: 20px;
+}
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+}
+
+.cert-grid article {
+  min-height: 210px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.cert-grid span {
+  display: inline-flex;
+  min-height: 32px;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 999px;
+  background: rgba(15, 118, 110, 0.12);
+  color: var(--accent-dark);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.cert-grid h2 {
+  margin: 18px 0 12px;
+  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+}
+
+.cert-grid p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.65;
 }
 
 .site-footer {
@@ -473,7 +520,8 @@ h3 {
   }
 
   .details,
-  .stats {
+  .stats,
+  .cert-grid {
     grid-template-columns: 1fr;
   }
 
