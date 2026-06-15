@@ -221,6 +221,24 @@ h3 {
   box-shadow: 0 20px 45px rgba(32, 33, 36, 0.12);
 }
 
+.about-hero {
+  grid-template-columns: minmax(0, 0.92fr) minmax(260px, 0.48fr);
+}
+
+.profile-portrait {
+  display: block;
+  width: 100%;
+  max-width: 360px;
+  aspect-ratio: 4 / 5;
+  justify-self: end;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--surface);
+  box-shadow: 0 24px 60px rgba(32, 33, 36, 0.16);
+}
+
 .details {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -586,6 +604,7 @@ h3 {
 
   .hero,
   .page-hero,
+  .about-hero,
   .two-column,
   .credentials {
     grid-template-columns: 1fr;
@@ -593,6 +612,10 @@ h3 {
 
   .code-card {
     max-width: 560px;
+  }
+
+  .profile-portrait {
+    justify-self: start;
   }
 }
 
