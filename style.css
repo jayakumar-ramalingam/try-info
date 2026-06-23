@@ -510,6 +510,10 @@ h3 {
   background: #fffdfa;
 }
 
+.certificate-gallery .certificate-portrait img {
+  aspect-ratio: 4 / 5;
+}
+
 .certificate-gallery div {
   padding: 18px;
 }
