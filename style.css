@@ -495,7 +495,9 @@ h3 {
 }
 
 .certificate-gallery article > a {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #ede8de;
 }
 
@@ -503,8 +505,9 @@ h3 {
   display: block;
   width: 100%;
   aspect-ratio: 16 / 10;
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  background: #fffdfa;
 }
 
 .certificate-gallery div {
