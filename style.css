@@ -190,25 +190,78 @@ h3 {
   transform: translateY(-2px);
 }
 
-.code-card {
+.connect-panel {
   padding: 24px;
   border: 1px solid var(--line);
   border-radius: 8px;
-  background: #1f2933;
+  background: rgba(255, 255, 255, 0.82);
   box-shadow: 0 24px 60px rgba(32, 33, 36, 0.16);
 }
 
-.code-card pre {
+.connect-panel .eyebrow {
   margin: 0;
-  overflow: auto;
 }
 
-.code-card code {
-  color: #e6fffb;
-  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
-  font-size: 0.92rem;
-  line-height: 1.7;
-  white-space: pre;
+.connect-links {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.connect-links a {
+  display: flex;
+  min-height: 42px;
+  align-items: center;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--accent-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.connect-links a:hover {
+  border-color: var(--accent);
+}
+
+.home-contributions {
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+
+.contribution-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 28px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contribution-list li {
+  min-width: 0;
+  padding: 18px 0;
+  border-top: 1px solid var(--line);
+}
+
+.contribution-list a,
+.contribution-list span {
+  display: block;
+}
+
+.contribution-list a {
+  color: var(--accent-dark);
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.contribution-list span {
+  margin-top: 8px;
+  color: var(--muted);
+  line-height: 1.55;
 }
 
 .avatar {
@@ -617,7 +670,7 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .code-card {
+  .connect-panel {
     max-width: 560px;
   }
 
@@ -648,6 +701,7 @@ h3 {
 
   .details,
   .stats,
+  .contribution-list,
   .cert-grid,
   .certificate-gallery,
   .photo-gallery {
