@@ -145,10 +145,18 @@ h3 {
 
 .summary {
   max-width: 680px;
-  margin: 28px 0 0;
+  margin: 18px 0 0;
   color: var(--muted);
   font-size: 1.2rem;
   line-height: 1.7;
+}
+
+.hero-statement {
+  max-width: 620px;
+  margin: 28px 0 0;
+  font-size: 2rem;
+  font-weight: 900;
+  line-height: 1.15;
 }
 
 .actions,
@@ -697,6 +705,10 @@ h3 {
 
   .summary {
     font-size: 1.05rem;
+  }
+
+  .hero-statement {
+    font-size: 1.5rem;
   }
 
   .details,
