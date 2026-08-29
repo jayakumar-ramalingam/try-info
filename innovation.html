@@ -41,77 +41,64 @@
     <main class="profile page">
       <section class="page-hero">
         <div>
-          <p class="eyebrow">Invention + Innovation</p>
-          <h1>Modernizing platforms for speed, intelligence, and scale.</h1>
+          <p class="eyebrow">Invention and Innovation</p>
+          <h1>Multi-speed personalization for a modern streaming platform.</h1>
         </div>
       </section>
 
-      <section class="details">
-        <article>
-          <h2>Cloud Modernization</h2>
-          <p>
-            Modernized legacy and monolithic systems into cloud-native
-            architectures that improve reliability, latency, maintainability,
-            and cost efficiency.
-          </p>
-        </article>
-        <article>
-          <h2>Real-time Decisioning</h2>
-          <p>
-            Designed event-driven platforms using streaming, serverless, and
-            distributed processing patterns for latency-sensitive decisioning
-            workflows.
-          </p>
-        </article>
-        <article>
-          <h2>Personalization + ML</h2>
-          <p>
-            Built backend architecture for recommendation systems, user affinity
-            modeling, contextual personalization, and behavioral signal
-            processing.
-          </p>
-        </article>
-      </section>
-
-      <section class="section two-column">
-        <div>
-          <p class="eyebrow">Impact</p>
-          <h2>Low-latency, production-ready AI/ML systems</h2>
-          <p>
-            Led architecture for personalization and recommendation workloads
-            supporting high-throughput request paths and helped drive a 40%
-            reduction in end-to-end latency.
-          </p>
-          <p>
-            I focus on patterns that let product, data science, architecture,
-            and platform teams translate experimentation into reliable backend
-            and data systems.
-          </p>
-        </div>
-        <div>
-          <p class="eyebrow">Technical Areas</p>
-          <ul class="skill-list">
-            <li>Event-driven systems and distributed processing</li>
-            <li>Microservices and low-latency APIs</li>
-            <li>AWS Kinesis, Kafka, Redis, Airflow, and serverless services</li>
-            <li>Recommendation systems and personalization platforms</li>
-            <li>Model-serving integrations and A/B testing support</li>
-            <li>RAG, LangChain, LLM integration, and agentic AI</li>
-            <li>Observability, fault tolerance, and operational readiness</li>
-          </ul>
-        </div>
-      </section>
-
-      <section class="section">
+      <section class="section star-statement" aria-labelledby="star-title">
         <div class="section-heading">
-          <p class="eyebrow">Selected Evidence</p>
-          <h2>Research translated into presented technical work.</h2>
+          <p class="eyebrow">Body of Work</p>
+          <h2 id="star-title">A production innovation developed between 2021 and 2023.</h2>
         </div>
-        <ul class="link-list">
-          <li><a href="publications.html">Research in event-driven architecture, dynamic pricing, graph AI, and intelligent platforms</a></li>
-          <li><a href="assets/certificates/iwis-2026-paper-presentation-certificate.pdf">IWIS 2026 first-author paper presentation</a></li>
-          <li><a href="assets/certificates/bdai-2026-paper-presentation-certificate.pdf">IEEE BDAI 2026 paper presentation</a></li>
+        <div class="star-grid">
+          <article>
+            <h3>Situation</h3>
+            <p>SiriusXM was expanding beyond its traditional in-vehicle service into a modern streaming platform. Existing scheduled recommendation processing could not incorporate changing listener behaviour during an active session, while moving everything into real time would increase cost, complexity, and latency risk.</p>
+          </article>
+          <article>
+            <h3>Task</h3>
+            <p>I led the design and delivery of a personalization platform covering listener-preference APIs, behavioral-event ingestion, recommendation processing, ranking integration, and the final "For You" response.</p>
+          </article>
+          <article>
+            <h3>Action</h3>
+            <p>I created a multi-speed, event-driven architecture. Long-term preferences, embeddings, and candidates remained in batch and machine-learning pipelines. Recent plays, skips, saves, searches, and follows were ingested through AWS Kinesis and Lambda. Request-time services combined durable preferences with current behavior and SageMaker-supported ranking.</p>
+            <p>Databricks, the data lake, and Airflow workflows processed data and machine-learning outputs to Amazon S3. I separated ingestion, candidate generation, ranking, and response serving behind stable interfaces, and architected a common caching library that teams could reuse across services.</p>
+          </article>
+          <article>
+            <h3>Result</h3>
+            <p>The customer-facing platform supports the "For You" experience at more than 3,000 requests per second. Subsequent optimization reduced end-to-end latency by approximately 40 percent against the initial production baseline.</p>
+            <p>The reusable caching pattern and modular contracts allowed new pipelines, ranking capabilities, and behavioral signals to be introduced without changing the customer-facing interface. I later generalized the work through peer-reviewed research and practitioner writing.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section proof-section" aria-labelledby="external-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">External Proof</p>
+          <h2 id="external-proof-title">Public sources supporting the work.</h2>
+        </div>
+        <ul class="proof-list">
+          <li><a href="https://investor.siriusxm.com/sec-filings/all-sec-filings/content/0000908937-26-000003/siriq42025earningsrelease.htm">SiriusXM FY2025 results</a><span>Scale of the service: approximately 33 million total subscribers, including 31.3 million self-pay subscribers.</span></li>
+          <li><a href="https://investor.siriusxm.com/news-events/press-releases/detail/2012/">SiriusXM Next Generation Platform announcement</a><span>Public evidence that the "For You" page and always-on personalization experience were launched.</span></li>
+          <li><a href="https://orcid.org/0009-0007-9823-3097">ORCID: 0009-0007-9823-3097</a><span>Publication record for the related research, including the event-driven architecture work.</span></li>
+          <li><a href="https://www.cscjournals.org/journals/IJSE/issue-manuscripts.php?i=2&amp;v=13">Edge-to-Cloud Machine Learning Pipelines for Low-Latency Intelligent Systems</a><span>Publisher record for related research.</span></li>
+          <li><a href="https://roundtable.ailovesdata.com/">AI Loves Data practitioner publication</a><span>Practitioner-facing version of the batch-to-streaming personalization architecture.</span></li>
+          <li><a href="publications.html">Full publication record</a><span>Site index connecting the research themes and authorship record.</span></li>
         </ul>
+      </section>
+
+      <section class="section proof-section" aria-labelledby="internal-proof-title">
+        <div class="section-heading">
+          <p class="eyebrow">Internal Evidence</p>
+          <h2 id="internal-proof-title">Facts retained privately and available for clarification.</h2>
+        </div>
+        <ul class="fact-list">
+          <li><strong>Architecture ownership.</strong> Architecture Decision Records covering the platform's multi-speed processing, service boundaries, caching strategy, and operational decisions are held internally and available to BCS on request.</li>
+          <li><strong>Throughput.</strong> The production service sustains more than 3,000 requests per second.</li>
+          <li><strong>Latency improvement.</strong> End-to-end latency was reduced by approximately 40 percent against the initial production baseline.</li>
+        </ul>
+        <p class="proof-note">No internal ADRs, architecture diagrams, production dashboards, proprietary code, or confidential customer data are published here.</p>
       </section>
     </main>
 
