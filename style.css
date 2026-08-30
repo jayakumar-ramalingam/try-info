@@ -717,6 +717,15 @@ h3 {
   line-height: 1.4;
 }
 
+.gallery-group + .gallery-group {
+  margin-top: 42px;
+}
+
+.gallery-group > h2 {
+  margin-bottom: 18px;
+  font-size: 1.35rem;
+}
+
 .site-footer {
   display: flex;
   justify-content: space-between;
